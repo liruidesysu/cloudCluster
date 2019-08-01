@@ -1,0 +1,52 @@
+Metadata-Version: 2.0
+Name: python-neutronclient
+Version: 4.1.1
+Summary: CLI and Client Library for OpenStack Networking
+Home-page: http://www.openstack.org/
+Author: OpenStack Networking Project
+Author-email: openstack-dev@lists.openstack.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Requires-Dist: pbr (>=1.6)
+Requires-Dist: cliff (!=1.16.0,>=1.15.0)
+Requires-Dist: debtcollector (>=1.2.0)
+Requires-Dist: iso8601 (>=0.1.9)
+Requires-Dist: netaddr (!=0.7.16,>=0.7.12)
+Requires-Dist: oslo.i18n (>=2.1.0)
+Requires-Dist: oslo.serialization (>=1.10.0)
+Requires-Dist: oslo.utils (>=3.5.0)
+Requires-Dist: os-client-config (>=1.13.1)
+Requires-Dist: keystoneauth1 (>=2.1.0)
+Requires-Dist: requests (!=2.9.0,>=2.8.1)
+Requires-Dist: simplejson (>=2.2.0)
+Requires-Dist: six (>=1.9.0)
+Requires-Dist: Babel (>=1.3)
+
+Python bindings to the Neutron API
+==================================
+
+This is a client library for Neutron built on the Neutron API. It
+provides a Python API (the ``neutronclient`` module) and a command-line tool
+(``neutron``).
+
+Development takes place via the usual OpenStack processes as outlined in the
+`developer guide <http://docs.openstack.org/infra/manual/developers.html>`_.
+
+* License: Apache License, Version 2.0
+* Documentation: http://docs.openstack.org/developer/python-neutronclient
+* Source: http://git.openstack.org/cgit/openstack/python-neutronclient
+* Bugs: http://bugs.launchpad.net/python-neutronclient
+
+
+
