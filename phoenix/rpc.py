@@ -1,9 +1,14 @@
 # -*- encoding: utf-8 -*-
 # Copyright 2016 Vinzor Co.,Ltd.
 #
+
 # RPC (远程过程调用协议)
 #
 # 2019/8/19 liruide : Init
+
+# RPC
+#
+# 2016/1/23 fengyc : Init
 
 
 def call(context, endpoint, *args, **kwargs):

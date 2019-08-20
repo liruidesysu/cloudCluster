@@ -52,7 +52,11 @@ def list_networks(retrieve_all=True, **_params):
 
 
 def get_network(network_id):
+<<<<<<< HEAD
     # TODO NEUTRON:return a dict, NOVA:return an object. should be unified later
+=======
+    # TODO_ NEUTRON:return a dict, NOVA:return an object. should be unified later
+>>>>>>> origin/master
     if NEUTRON_CLI is not None:
         networks = NEUTRON_CLI.list_networks()['networks']
         for net in networks:
@@ -234,7 +238,11 @@ def get_vm_external_net_id(server):
         private_net_name = list(vm_nets.keys())[0]
 
         # judge if vm already associate with a floating ip
+<<<<<<< HEAD
         # TODO: should use a more robust method to judge if the vm already had a floating ip
+=======
+        # TODO_: should use a more robust method to judge if the vm already had a floating ip
+>>>>>>> origin/master
         if len(vm_nets[private_net_name]) >= 2:
             LOG.warn('server %s already associated with floating ip' % vm.id)
             return None

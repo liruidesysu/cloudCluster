@@ -206,7 +206,11 @@ def get_floating_ips(sort_col=None, search=None):
 def get_last_sync_time():
     """Get the floadting ips' last sync time"""
     with session_scope() as session:
+
         # FIXME: here we use the created time as the last sync time,
+
+        # FIXME_: here we use the created time as the last sync time,
+
         last_update_one = session.query(FloatingIp).order_by("created_at desc").first()
         session.expunge_all()
         return last_update_one.created_at if last_update_one else None
