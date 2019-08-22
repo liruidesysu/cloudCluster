@@ -25,9 +25,11 @@ def list_networks(retrieve_all=True, **_params):
     """Fetches a list of all networks for a tenant."""
     return IMPL.list_networks(retrieve_all, **_params)
 
+
 def get_network(network_id):
     """Fetches information of a certain network."""
     return IMPL.get_network(network_id)
+
 
 def get_network_by_name(name):
     """Fetches information of a certain network."""
@@ -250,6 +252,7 @@ def create_security_group_rule(parent_group_id, direction=None, ethertype=None,
 def delete_security_group_rule(rule):
     """Deletes the specified security group rule."""
     return IMPL.delete_security_group_rule(rule)
+
 
 def list_network_ip_availabilities(retrieve_all=True, **_params):
     """

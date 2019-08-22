@@ -29,7 +29,7 @@ class Opt(object):
         self.__dict__.update(**kwargs)
 
     def parse(self, opt_value):
-        """         an option value (a string) to a value (int, list, map ...)
+        """            an option value (a string) to a value (int, list, map ...)
         :param opt_value:
         :return:
         """
